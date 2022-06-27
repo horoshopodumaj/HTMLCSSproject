@@ -1,46 +1,46 @@
 {
-  "name": "tasks-htmlcss",
-  "version": "1.0.0",
-  "description": "Course Materials",
-  "scripts": {
-    "test": "cross-env NODE_ENV=test mocha --no-warnings --ignore=node_modules/** **/*.test.js",
-    "build": "postcss src/index.scss -o dist/index.css",
-    "stylelint": "stylelint '**/*.scss'"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
+    "name": "tasks-htmlcss",
+    "version": "1.0.0",
+    "description": "Course Materials",
+    "scripts": {
+        "test": "cross-env NODE_ENV=test mocha --no-warnings --ignore=node_modules/** **/*.test.js",
+        "build": "postcss src/index.scss -o css/index.css",
+        "stylelint": "stylelint '**/*.scss'"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*.{html,css,scss}": [
+            "prettier --write",
+            "git add"
+        ]
+    },
+    "keywords": [],
+    "author": "Diana Murtazina",
+    "license": "ISC",
+    "devDependencies": {
+        "autoprefixer": "^10.4.7",
+        "chai": "^4.2.0",
+        "cross-env": "^7.0.2",
+        "cssnano": "^5.1.12",
+        "mocha": "^7.1.2",
+        "postcss": "^8.4.14",
+        "postcss-advanced-variables": "^3.0.1",
+        "postcss-cli": "^9.1.0",
+        "postcss-import": "^14.1.0",
+        "postcss-nested": "^5.0.6",
+        "postcss-scss": "^4.0.4",
+        "postcss-strip-inline-comments": "^0.1.5",
+        "prettier": "2.7.1",
+        "sass": "^1.52.3",
+        "stylelint": "^14.9.1",
+        "stylelint-config-standard": "^26.0.0"
+    },
+    "dependencies": {
+        "husky": "^6.0.0",
+        "lint-staged": "^10.5.4"
     }
-  },
-  "lint-staged": {
-    "*.{html,css,scss}": [
-      "prettier --write",
-      "git add"
-    ]
-  },
-  "keywords": [],
-  "author": "Diana Murtazina",
-  "license": "ISC",
-  "devDependencies": {
-    "autoprefixer": "^10.4.7",
-    "chai": "^4.2.0",
-    "cross-env": "^7.0.2",
-    "cssnano": "^5.1.12",
-    "mocha": "^7.1.2",
-    "postcss": "^8.4.14",
-    "postcss-advanced-variables": "^3.0.1",
-    "postcss-cli": "^9.1.0",
-    "postcss-import": "^14.1.0",
-    "postcss-nested": "^5.0.6",
-    "postcss-scss": "^4.0.4",
-    "postcss-strip-inline-comments": "^0.1.5",
-    "prettier": "2.7.1",
-    "sass": "^1.52.3",
-    "stylelint": "^14.9.1",
-    "stylelint-config-standard": "^26.0.0"
-  },
-  "dependencies": {
-    "husky": "^6.0.0",
-    "lint-staged": "^10.5.4"
-  }
 }

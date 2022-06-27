@@ -371,7 +371,7 @@ html[data-theme-dark] {
   margin: 0;
 }
 
-.button, .button_four, .button_three, .button_two, .button_alternate, .button_secondary, .button_primary {
+.button {
   height: 48px;
   padding: 5px 20px;
   border: 0px;
@@ -383,7 +383,7 @@ html[data-theme-dark] {
   white-space: nowrap;
   position: relative;
 }
-.button:disabled, .button_four:disabled, .button_three:disabled, .button_two:disabled, .button_alternate:disabled, .button_secondary:disabled, .button_primary:disabled {
+.button:disabled {
   opacity: 0.5;
   pointer-events: none;
 }

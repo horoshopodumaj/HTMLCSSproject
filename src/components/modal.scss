@@ -1,0 +1,60 @@
+.modal {
+    display: none;
+    background-color: rgba(196, 196, 196, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+
+    &__window {
+        position: absolute;
+        height: auto;
+        width: 428px;
+        background: var(--white);
+        border-radius: 8px;
+        box-sizing: border-box;
+        padding: 30px 40px 33px 40px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        @media screen and (max-width: 425px) {
+            width: 300px;
+            padding: 20px 30px 20px 30px;
+        }
+    }
+
+    &__mark {
+        position: absolute;
+        left: 90%;
+        bottom: 87%;
+
+        @media screen and (max-width: 425px) {
+            bottom: 89%;
+        }
+    }
+    &__title {
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 120%;
+        color: var(--blue-4);
+        margin-bottom: 14px;
+    }
+    &__content {
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: var(--grey-4);
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    &__content p {
+        margin: 0;
+    }
+}

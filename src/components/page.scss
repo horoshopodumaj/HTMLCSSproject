@@ -1,0 +1,15 @@
+.main-page {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    &__container {
+        max-width: 1100px;
+        margin: 0 auto;
+        position: relative;
+
+        @media screen and (max-width: 1040px) {
+            padding: 0 16px;
+        }
+    }
+}

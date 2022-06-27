@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://yarnpkg.com/en/package/normalize.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="/css/index.css" />
+        <link rel="stylesheet" href="/css/theme.css" />
+        <script src="/js/rainbow-custom.min.js"></script>
+        <script defer src="/js/burger-menu.js"></script>
+        <title>Component</title>
+    </head>
+    <body>
+        <div class="page">
+            <div class="page__box">
+                <div class="page__header">
+                    <button class="burger-menu__open-btn" id="burger-menu-open">
+                        <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M3 12H21"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                            <path
+                                d="M3 6H21"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                            <path
+                                d="M3 18H21"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+                    </button>
+                    <div class="burger-menu" id="burger-menu">
+                        <div class="burger-menu__header">
+                            <div class="burger-menu__container">
+                                <button
+                                    class="burger-menu__close-btn"
+                                    id="burger-menu-close"
+                                >
+                                    <svg
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M18 6L6 18"
+                                            stroke="#212429"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                        <path
+                                            d="M6 6L18 18"
+                                            stroke="#212429"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </button>
+                                <a href="/index.html" class="header__logo">
+                                    <svg
+                                        width="110"
+                                        height="32"
+                                        viewBox="0 0 110 32"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <rect y="1" width="30" height="30" />
+                                        <rect
+                                            x="38"
+                                            width="32"
+                                            height="32"
+                                            rx="16"
+                                        />
+                                        <path d="M78 0L110 32H78V0Z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="burger-menu__body">
+                            <div class="burger-menu__container">
+                                <div class="tabs__divider"></div>
+                                <div class="burger-menu__dark-mode">
+                                    <div class="burger-menu__head">
+                                        Dark mode
+                                    </div>
+                                    <label class="toggle">
+                                        <input
+                                            id="burger-changer"
+                                            type="checkbox"
+                                            class="toggle__input"
+                                        />
+                                        <div class="toggle__state">
+                                            <div class="toggle__control">
+                                                <div class="toggle__icon"></div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="tabs__divider"></div>
+                                <div class="burger-menu__menu">
+                                    <h4 class="burger-menu__title">
+                                        Components
+                                    </h4>
+                                    <nav class="burger-menu__main">
+                                        <a href="./modal.html">Modal</a>
+                                        <a href="./tooltip.html">Tooltip</a>
+                                        <a
+                                            href="#"
+                                            class="burger-menu__main_current"
+                                            >Avatar</a
+                                        >
+                                        <a href="./calendar.html">Calendar</a>
+                                        <a href="./histogram.html">Histogram</a>
+                                        <a href="./elements.html"
+                                            >Custom form elements</a
+                                        >
+                                    </nav>
+                                    <div class="burger-menu__footer">
+                                        <a href="/index.html">Main page</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="/index.html" class="page__logo">
+                        <svg
+                            width="110"
+                            height="32"
+                            viewBox="0 0 110 32"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <rect y="1" width="30" height="30" />
+                            <rect x="38" width="32" height="32" rx="16" />
+                            <path d="M78 0L110 32H78V0Z" />
+                        </svg>
+                    </a>
+                    <div class="page__dark-mode dark-mode">
+                        <div class="dark-mode__icon">
+                            <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17Z"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                                <path
+                                    d="M12 1V3"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                                <path
+                                    d="M12 21V23"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                                <path
+                                    d="M4.22021 4.21997L5.64021 5.63997"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                                <path
+                                    d="M18.3599 18.36L19.7799 19.78"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                                <path
+                                    d="M1 12H3"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                                <path
+                                    d="M21 12H23"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                                <path
+                                    d="M4.22021 19.78L5.64021 18.36"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                                <path
+                                    d="M18.3599 5.63997L19.7799 4.21997"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </div>
+                        <label class="toggle">
+                            <input
+                                type="checkbox"
+                                class="toggle__input"
+                                id="theme-changer"
+                            />
+                            <div class="toggle__state">
+                                <div class="toggle__control">
+                                    <div class="toggle__icon"></div>
+                                </div>
+                            </div>
+                        </label>
+                        <div class="dark-mode__icon">
+                            <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M20.9999 12.79C20.8426 14.4922 20.2038 16.1144 19.1581 17.4668C18.1125 18.8192 16.7034 19.8458 15.0956 20.4265C13.4878 21.0073 11.7479 21.1181 10.0794 20.7461C8.41092 20.3741 6.8829 19.5345 5.67413 18.3258C4.46536 17.117 3.62584 15.589 3.25381 13.9205C2.88178 12.252 2.99262 10.5121 3.57336 8.9043C4.15411 7.29651 5.18073 5.88737 6.53311 4.84175C7.8855 3.79614 9.5077 3.15731 11.2099 3C10.2133 4.34827 9.73375 6.00945 9.85843 7.68141C9.98312 9.35338 10.7038 10.9251 11.8893 12.1106C13.0748 13.2961 14.6465 14.0168 16.3185 14.1415C17.9905 14.2662 19.6516 13.7866 20.9999 12.79V12.79Z"
+                                    stroke="#ACB5BD"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="page__box">
+                <div class="page__main">
+                    <div class="menu">
+                        <h4 class="menu__title">Components</h4>
+                        <nav class="menu__main">
+                            <a href="./modal.html">Modal</a>
+                            <a href="./tooltip.html">Tooltip</a>
+                            <a href="#" class="menu__main_current">Avatar</a>
+                            <a href="./calendar.html">Calendar</a>
+                            <a href="./histogram.html">Histogram</a>
+                            <a href="./elements.html">Custom form elements</a>
+                        </nav>
+                        <div class="menu__footer">
+                            <a href="/index.html">Main page</a>
+                        </div>
+                    </div>
+                    <div class="component">
+                        <h3 class="component__title">Avatar</h3>
+                        <div class="avatar">
+                            <img
+                                src="/img/avatar-200.jpg"
+                                alt=""
+                                class="avatar__img"
+                            />
+                        </div>
+                        <div class="tabs component__tabs">
+                            <input
+                                type="radio"
+                                id="tab1"
+                                name="tabs"
+                                class="tabs__input"
+                                checked
+                            />
+                            <input
+                                type="radio"
+                                id="tab2"
+                                name="tabs"
+                                class="tabs__input"
+                            />
+                            <div class="tabs__menu">
+                                <div class="tabs__scroller">
+                                    <label for="tab1" class="tabs__label"
+                                        >HTML</label
+                                    >
+                                    <label for="tab2" class="tabs__label"
+                                        >CSS</label
+                                    >
+                                </div>
+                            </div>
+                            <div class="tabs__divider"></div>
+                            <div class="tabs__content tabs__content_html">
+                                <figure>
+                                    <pre>
+                                        <code data-language="html">
+&lt;div class=&quot;avatar&quot;&gt;
+    &lt;img src=&quot;/04_lesson/avatar/public/avatar-200.jpg&quot; alt=&quot;&quot; class=&quot;avatar__img&quot;/&gt;
+&lt;/div&gt;
+                                        </code>
+                                    </pre>
+                                </figure>
+                            </div>
+                            <div class="tabs__content tabs__content_css">
+                                <figure>
+                                    <pre>
+                                        <code data-language="css">
+.avatar {
+    height: 102px;
+    width: 102px;
+    border-radius: 50%;
+}
+.avatar__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+                                        </code>
+                                    </pre>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="page__footer">Reusable component library</div>
+        </div>
+    </body>
+    <script src="/js/theme-changer.js"></script>
+    <script src="/js/burger-changer.js"></script>
+</html>

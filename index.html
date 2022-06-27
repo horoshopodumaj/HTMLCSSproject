@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<!-- Главная страница -->
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://yarnpkg.com/en/package/normalize.css" />
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/css/index.css">
+        <script defer src="/js/burger-menu.js"></script>
+        <title>Main page</title>
+    </head>
+    <body>
+        <div class="main-page">
+            <header class="header">
+                <div class="main-page__container">
+                    <button class="burger-menu__open-btn" id="burger-menu-open">
+                        <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M3 12H21"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                            <path
+                                d="M3 6H21"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                            <path
+                                d="M3 18H21"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+                    </button>
+                    <div class="burger-menu" id="burger-menu">
+                        <div class="burger-menu__header">
+                            <div class="burger-menu__container">
+                                <button
+                                    class="burger-menu__close-btn"
+                                    id="burger-menu-close"
+                                >
+                                    <svg
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M18 6L6 18"
+                                            stroke="#212429"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                        <path
+                                            d="M6 6L18 18"
+                                            stroke="#212429"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </button>
+                                <a href="/index.html" class="header__logo">
+                                    <svg
+                                        width="110"
+                                        height="32"
+                                        viewBox="0 0 110 32"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <rect y="1" width="30" height="30" />
+                                        <rect
+                                            x="38"
+                                            width="32"
+                                            height="32"
+                                            rx="16"
+                                        />
+                                        <path d="M78 0L110 32H78V0Z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="burger-menu__body">
+                            <div class="burger-menu__container">
+                                <div class="tabs__divider"></div>
+                                <div class="burger-menu__dark-mode">
+                                    <div class="burger-menu__head">
+                                        Dark mode
+                                    </div>
+                                    <label class="toggle">
+                                        <input
+                                            id="burger-changer"
+                                            type="checkbox"
+                                            class="toggle__input"
+                                        />
+                                        <div class="toggle__state">
+                                            <div class="toggle__control">
+                                                <div class="toggle__icon"></div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="tabs__divider"></div>
+                                <div class="burger-menu__menu">
+                                    <h4 class="burger-menu__title">
+                                        Components
+                                    </h4>
+                                    <nav class="burger-menu__main">
+                                        <a href="/pages/modal.html">Modal</a>
+                                        <a href="/pages/tooltip.html">Tooltip</a>
+                                        <a href="/pages/avatar.html">Avatar</a>
+                                        <a href="/pages/calendar.html">Calendar</a>
+                                        <a href="/pages/histogram.html">Histogram</a>
+                                        <a href="/pages/elements.html"
+                                            >Custom form elements</a
+                                        >
+                                    </nav>
+                                    <div class="burger-menu__footer">
+                                        <a href="#" class="burger-menu__main_current">Main page</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="./index.html" class="header__logo">
+                        <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="1" width="30" height="30"/>
+                            <rect x="38" width="32" height="32" rx="16"/>
+                            <path d="M78 0L110 32H78V0Z"/>
+                        </svg>
+                    </a>
+                    <div class="header__dark-mode dark-mode">
+                        <div class="dark-mode__icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 1V3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 21V23" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.22021 4.21997L5.64021 5.63997" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M18.3599 18.36L19.7799 19.78" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M1 12H3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 12H23" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.22021 19.78L5.64021 18.36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M18.3599 5.63997L19.7799 4.21997" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                        </div>
+                        <label class="toggle">
+                            <input id="theme-changer"
+                                type="checkbox" 
+                                class="toggle__input"
+                            />
+                            <div class="toggle__state">
+                                <div class="toggle__control">
+                                    <div class="toggle__icon"></div>
+                                </div>
+                            </div>
+                        </label>
+                        <div class="dark-mode__icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.9999 12.79C20.8426 14.4922 20.2038 16.1144 19.1581 17.4668C18.1125 18.8192 16.7034 19.8458 15.0956 20.4265C13.4878 21.0073 11.7479 21.1181 10.0794 20.7461C8.41092 20.3741 6.8829 19.5345 5.67413 18.3258C4.46536 17.117 3.62584 15.589 3.25381 13.9205C2.88178 12.252 2.99262 10.5121 3.57336 8.9043C4.15411 7.29651 5.18073 5.88737 6.53311 4.84175C7.8855 3.79614 9.5077 3.15731 11.2099 3C10.2133 4.34827 9.73375 6.00945 9.85843 7.68141C9.98312 9.35338 10.7038 10.9251 11.8893 12.1106C13.0748 13.2961 14.6465 14.0168 16.3185 14.1415C17.9905 14.2662 19.6516 13.7866 20.9999 12.79V12.79Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                        </div>
+                    </div>
+                    <h1 class="header__title">Reusable component library</h1>
+                    
+                    
+                </div>
+            </header>
+            <main class="preview">
+                <div class="tabs">
+                    <input type="radio" id="tab1" name="tabs" class="tabs__input" checked>
+                    <input type="radio" id="tab2" name="tabs" class="tabs__input">
+                    <input type="radio" id="tab3" name="tabs" class="tabs__input">
+                    <input type="radio" id="tab4" name="tabs" class="tabs__input">
+                
+                    <div class="tabs__menu">
+                        <div class="main-page__container">
+                            <div class="tabs__scroller">
+                                <label for="tab1" class="tabs__label">All components</label>
+                                <label for="tab2" class="tabs__label">Elements</label>
+                                <label for="tab3" class="tabs__label">Containers</label>
+                                <label for="tab4" class="tabs__label">Templates</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs__divider"></div>
+                    <section class="preview__content">
+                        <div class="tabs__content tabs__content_all">
+                            <div class="main-page__container preview__box">
+                                <a href='./pages/tooltip.html'class="card preview__card">
+                                    <div class="card__content">
+                                        <div class="tooltip card__tooltip">
+                                            <div class="tooltip__trigger">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3ZM1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12Z"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.2581 8.02432C11.7926 7.94447 11.3138 8.03195 10.9066 8.27126C10.4994 8.51058 10.1901 8.88629 10.0333 9.33184C9.85006 9.85283 9.27914 10.1266 8.75815 9.94333C8.23716 9.76006 7.96339 9.18915 8.14666 8.66816C8.46013 7.77705 9.07886 7.02563 9.89327 6.547C10.7077 6.06837 11.6652 5.89341 12.5962 6.05311C13.5273 6.2128 14.3717 6.69686 14.9801 7.41953C15.5883 8.14205 15.9213 9.05648 15.92 10.0009C15.9195 11.5313 14.7849 12.5419 13.9747 13.082C13.5391 13.3725 13.1105 13.586 12.7949 13.7263C12.6356 13.7971 12.5015 13.8508 12.4049 13.8876C12.3565 13.906 12.3173 13.9203 12.2887 13.9305L12.254 13.9427L12.2429 13.9464L12.239 13.9478L12.2375 13.9483C12.2372 13.9484 12.2362 13.9487 11.92 13L12.2362 13.9487C11.7123 14.1233 11.146 13.8402 10.9713 13.3162C10.7968 12.7926 11.0794 12.2267 11.6027 12.0517L11.6014 12.0521C11.6015 12.0521 11.6016 12.052 11.6027 12.0517L11.6187 12.0461C11.6341 12.0406 11.6593 12.0314 11.6929 12.0186C11.7603 11.9929 11.8606 11.9529 11.9826 11.8987C12.2294 11.789 12.5509 11.6275 12.8653 11.4179C13.5549 10.9582 13.92 10.4691 13.92 10L13.92 9.99851C13.9207 9.52619 13.7542 9.06886 13.45 8.70753C13.1459 8.34619 12.7236 8.10417 12.2581 8.02432Z"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 15C12.5523 15 13 15.4477 13 16V16.5C13 17.0523 12.5523 17.5 12 17.5C11.4477 17.5 11 17.0523 11 16.5V16C11 15.4477 11.4477 15 12 15Z"/>
+                                                    </svg>
+                                            </div>
+                                            <div class="tooltip__bubble">Helper Text</div>
+                                        </div>
+                                    </div>
+                                    <div class="card__footer">
+                                        <h4 class="card__title">Tooltip</h4>
+                                        <p>Container</p>
+                                    </div>
+                                </a>
+                                <a href="./pages/elements.html" class="card preview__card">
+                                    <div class="card__content card__input">
+                                        <label class="radio">
+                                            <input type="radio" class="radio__input" name="radio">
+                                            <div class="radio__state">
+                                                <div class="radio__control">
+                                                    <div class="radio__icon"></div>
+                                                </div>
+                                                <div class="radio__label">Default</div>
+                                            </div>
+                                            
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" class="radio__input" name="radio" checked>
+                                            <div class="radio__state">
+                                                <div class="radio__control">
+                                                    <div class="radio__icon"></div>
+                                                </div>
+                                                <div class="radio__label">Selected</div>
+                                            </div>
+                                        </label>
+                                        <label class="radio" >
+                                            <input type="radio" class="radio__input" name="radio" disabled>
+                                            <div class="radio__state">
+                                                <div class="radio__control">
+                                                    <div class="radio__icon"></div>
+                                                </div>
+                                                <div class="radio__label">Desabled</div>
+                                            </div>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="checkbox__input">
+                                            <div class="checkbox__state">
+                                                <div class="checkbox__control">
+                                                    <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="checkbox__label">Default</div>
+                                            </div>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="checkbox__input" checked>
+                                            <div class="checkbox__state">
+                                                <div class="checkbox__control">
+                                                    <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="checkbox__label">Checked</div>
+                                            </div>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="checkbox__input" disabled>
+                                            <div class="checkbox__state">
+                                                <div class="checkbox__control">
+                                                    <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="checkbox__label">Desabled</div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="card__footer">
+                                        <h4 class="card__title">Custom form elements</h4>
+                                        <p>Element</p>
+                                    </div>
+                                </a>
+                                <a href="./pages/calendar.html" class="card preview__card">
+                                    <div class="card__content">
+                                        <div class="calendar calendar_mini">
+                                            <div class="calendar__title">October 2019</div>
+                                            <div class="calendar__wrapper">
+                                                <div class="calendar__inner">
+                                                    <span class="calendar__item calendar__item_day">Mon</span>
+                                                    <span class="calendar__item calendar__item_day">Tue</span>
+                                                    <span class="calendar__item calendar__item_day">Wed</span>
+                                                    <span class="calendar__item calendar__item_day">Thu</span>
+                                                    <span class="calendar__item calendar__item_day">Fri</span>
+                                                    <span class="calendar__item calendar__item_day">Sat</span>
+                                                    <span class="calendar__item calendar__item_day">Sun</span>
+                                                    <span class="calendar__item"></span>
+                                                    <span class="calendar__item"></span>
+                                                    <span class="calendar__item">1</span>
+                                                    <span class="calendar__item">2</span>
+                                                    <span class="calendar__item">3</span>
+                                                    <span class="calendar__item">4</span>
+                                                    <span class="calendar__item">5</span>
+                                                    <span class="calendar__item">6</span>
+                                                    <span class="calendar__item">7</span>
+                                                    <span class="calendar__item">8</span>
+                                                    <span class="calendar__item">9</span>
+                                                    <span class="calendar__item">10</span>
+                                                    <span class="calendar__item">11</span>
+                                                    <span class="calendar__item">12</span>
+                                                    <span class="calendar__item calendar__item_area">13</span>
+                                                    <span class="calendar__item calendar__item_area-day">14</span>
+                                                    <span class="calendar__item calendar__item_area-day">15</span>
+                                                    <span class="calendar__item calendar__item_area-day">16</span>
+                                                    <span class="calendar__item calendar__item_area-day">17</span>
+                                                    <span class="calendar__item calendar__item_area">18</span>
+                                                    <span class="calendar__item">19</span>
+                                                    <span class="calendar__item">20</span>
+                                                    <span class="calendar__item">21</span>
+                                                    <span class="calendar__item">22</span>
+                                                    <span class="calendar__item">23</span>
+                                                    <span class="calendar__item">24</span>
+                                                    <span class="calendar__item">25</span>
+                                                    <span class="calendar__item">26</span>
+                                                    <span class="calendar__item">27</span>
+                                                    <span class="calendar__item">28</span>
+                                                    <span class="calendar__item">29</span>
+                                                    <span class="calendar__item">30</span>
+                                                    <span class="calendar__item">31</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__footer">
+                                        <h4 class="card__title">Calendar</h4>
+                                        <p>Container</p>
+                                    </div>
+                                </a>
+                                <a href="./pages/modal.html" class="card preview__card">
+                                    <div class="card__content">
+                                            <div class="modal__window card__modal">
+                                                <div class="modal__mark"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4714 3.52861C12.7318 3.78896 12.7318 4.21107 12.4714 4.47141L4.47141 12.4714C4.21107 12.7318 3.78896 12.7318 3.52861 12.4714C3.26826 12.2111 3.26826 11.789 3.52861 11.5286L11.5286 3.52861C11.789 3.26826 12.2111 3.26826 12.4714 3.52861Z" fill="#495057"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.52861 3.52861C3.78896 3.26826 4.21107 3.26826 4.47141 3.52861L12.4714 11.5286C12.7318 11.789 12.7318 12.2111 12.4714 12.4714C12.2111 12.7318 11.789 12.7318 11.5286 12.4714L3.52861 4.47141C3.26826 4.21107 3.26826 3.78896 3.52861 3.52861Z" fill="#495057"/></svg>
+                                                    </svg>
+                                                </div>
+                                                <div class="modal__title">Modal title</div>
+                                                <div class="modal__content">
+                                                    <div class="text-group">
+                                                        <label class="text-group__label">Email</label>
+                                                        <div class="text-group__input">
+                                                            <input  type="email" placeholder="Email">
+                                                        </div>
+                                                    </div>
+                                                    <button class="button button_primary button_modal">Submit</button>
+                                                    </div>
+                                            </div>
+            
+                                    </div>
+                                    <div class="card__footer">
+                                        <h4 class="card__title">Modal dialog</h4>
+                                        <p>Container</p>
+                                    </div>
+                                </a>
+                                <a href="./pages/histogram.html" class="card preview__card">
+                                    <div class="card__content">
+                                        <div class="historgam card__histogram">
+                                            <div class="histogram__header">
+                                                <div class="histogram__title">Total orders</div>
+                                            </div>
+                                            <div class="histogram__score">50254</div>
+                                            <div class="histogram__chart">
+                                                <div class="histogram__item" style="height:100%"></div>
+                                                <div class="histogram__item" style="height:50%"></div>
+                                                <div class="histogram__item" style="height:80%"></div>
+                                                <div class="histogram__item" style="height:36%"></div>
+                                                <div class="histogram__item" style="height:71%"></div>
+                                                <div class="histogram__item" style="height:15%"></div>
+                                                <div class="histogram__item" style="height:100%"></div>
+                                                <div class="histogram__item" style="height:48%"></div>
+                                                <div class="histogram__item" style="height:63%"></div>
+                                                <div class="histogram__item" style="height:54%"></div>
+                                                <div class="histogram__item" style="height:22%"></div>
+                                                <div class="histogram__item" style="height:100%"></div>
+                                                <div class="histogram__item" style="height:50%"></div>
+                                                <div class="histogram__item" style="height:8%"></div>
+                                                <div class="histogram__item" style="height:63%"></div>
+                                                <div class="histogram__item" style="height:17%"></div>
+                                                <div class="histogram__item" style="height:51%"></div>
+                                                <div class="histogram__item" style="height:100%"></div>
+                                                <div class="histogram__item" style="height:84%"></div>
+                                                <div class="histogram__item" style="height:36%"></div>
+                                                <div class="histogram__item" style="height:45%"></div>
+                                                <div class="histogram__item" style="height:22%"></div>
+                                                <div class="histogram__item" style="height:90%"></div>
+                                                <div class="histogram__item" style="height:70%"></div>
+                                                <div class="histogram__item" style="height:29%"></div>
+                                                <div class="histogram__item" style="height:63%"></div>
+                                                <div class="histogram__item" style="height:52%"></div>
+                                                <div class="histogram__item" style="height:14%"></div>
+                                                <div class="histogram__item" style="height:60%"></div>
+                                                <div class="histogram__item" style="height:34%"></div>
+                                                <div class="histogram__item" style="height:72%"></div>
+                                                <div class="histogram__item" style="height:39%"></div>
+                                                <div class="histogram__item" style="height:7%"></div>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                    <div class="card__footer">
+                                        <h4 class="card__title">Histogram</h4>
+                                        <p>Element</p>
+                                    </div>
+                                </a>
+                                <a href="./pages/avatar.html" class="card preview__card">
+                                    <div class="card__content">
+                                        <div class="avatar">
+                                            <img src="/img/avatar-200.jpg" alt="" class="avatar__img">
+                                        </div>
+                                    </div>
+                                    <div class="card__footer">
+                                        <h4 class="card__title">Avatar</h4>
+                                        <p>Element</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="tabs__content tabs__content_elements">
+                            <div class="main-page__container preview__box">
+                                <a href="./pages/histogram.html" class="card preview__card">
+                                    <div class="card__content">
+                                        <div class="historgam card__histogram">
+                                            <div class="histogram__header">
+                                                <div class="histogram__title">Total orders</div>
+                                            </div>
+                                            <div class="histogram__score">50254</div>
+                                            <div class="histogram__chart">
+                                                <div class="histogram__item" style="height:100%"></div>
+                                                <div class="histogram__item" style="height:50%"></div>
+                                                <div class="histogram__item" style="height:80%"></div>
+                                                <div class="histogram__item" style="height:36%"></div>
+                                                <div class="histogram__item" style="height:71%"></div>
+                                                <div class="histogram__item" style="height:15%"></div>
+                                                <div class="histogram__item" style="height:100%"></div>
+                                                <div class="histogram__item" style="height:48%"></div>
+                                                <div class="histogram__item" style="height:63%"></div>
+                                                <div class="histogram__item" style="height:54%"></div>
+                                                <div class="histogram__item" style="height:22%"></div>
+                                                <div class="histogram__item" style="height:100%"></div>
+                                                <div class="histogram__item" style="height:50%"></div>
+                                                <div class="histogram__item" style="height:8%"></div>
+                                                <div class="histogram__item" style="height:63%"></div>
+                                                <div class="histogram__item" style="height:17%"></div>
+                                                <div class="histogram__item" style="height:51%"></div>
+                                                <div class="histogram__item" style="height:100%"></div>
+                                                <div class="histogram__item" style="height:84%"></div>
+                                                <div class="histogram__item" style="height:36%"></div>
+                                                <div class="histogram__item" style="height:45%"></div>
+                                                <div class="histogram__item" style="height:22%"></div>
+                                                <div class="histogram__item" style="height:90%"></div>
+                                                <div class="histogram__item" style="height:70%"></div>
+                                                <div class="histogram__item" style="height:29%"></div>
+                                                <div class="histogram__item" style="height:63%"></div>
+                                                <div class="histogram__item" style="height:52%"></div>
+                                                <div class="histogram__item" style="height:14%"></div>
+                                                <div class="histogram__item" style="height:60%"></div>
+                                                <div class="histogram__item" style="height:34%"></div>
+                                                <div class="histogram__item" style="height:72%"></div>
+                                                <div class="histogram__item" style="height:39%"></div>
+                                                <div class="histogram__item" style="height:7%"></div>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                    <div class="card__footer">
+                                        <h4 class="card__title">Histogram</h4>
+                                        <p>Element</p>
+                                    </div>
+                                </a>
+                                <a href="/pages/avatar.html" class="card preview__card">
+                                    <div class="card__content">
+                                        <div class="avatar">
+                                            <img src="/img/avatar-200.jpg" alt="" class="avatar__img">
+                                        </div>
+                                    </div>
+                                    <div class="card__footer">
+                                        <h4 class="card__title">Avatar</h4>
+                                        <p>Element</p>
+                                    </div>
+                                </a>
+                                <a href="./pages/elements.html" class="card preview__card">
+                                    <div class="card__content card__input">
+                                        <label class="radio">
+                                            <input type="radio" class="radio__input" name="radio">
+                                            <div class="radio__state">
+                                                <div class="radio__control">
+                                                    <div class="radio__icon"></div>
+                                                </div>
+                                                <div class="radio__label">Default</div>
+                                            </div>
+                                            
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" class="radio__input" name="radio" checked>
+                                            <div class="radio__state">
+                                                <div class="radio__control">
+                                                    <div class="radio__icon"></div>
+                                                </div>
+                                                <div class="radio__label">Selected</div>
+                                            </div>
+                                        </label>
+                                        <label class="radio" >
+                                            <input type="radio" class="radio__input" name="radio" disabled>
+                                            <div class="radio__state">
+                                                <div class="radio__control">
+                                                    <div class="radio__icon"></div>
+                                                </div>
+                                                <div class="radio__label">Desabled</div>
+                                            </div>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="checkbox__input">
+                                            <div class="checkbox__state">
+                                                <div class="checkbox__control">
+                                                    <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="checkbox__label">Default</div>
+                                            </div>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="checkbox__input" checked>
+                                            <div class="checkbox__state">
+                                                <div class="checkbox__control">
+                                                    <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="checkbox__label">Checked</div>
+                                            </div>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="checkbox__input" disabled>
+                                            <div class="checkbox__state">
+                                                <div class="checkbox__control">
+                                                    <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="checkbox__label">Desabled</div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="card__footer">
+                                        <h4 class="card__title">Custom form elements</h4>
+                                        <p>Element</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="tabs__content tabs__content_containers">
+                            <div class="main-page__container preview__box">
+                                <a href='./pages/tooltip.html'class="card preview__card">
+                                    <div class="card__content">
+                                        <div class="tooltip card__tooltip">
+                                            <div class="tooltip__trigger">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3ZM1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12Z"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.2581 8.02432C11.7926 7.94447 11.3138 8.03195 10.9066 8.27126C10.4994 8.51058 10.1901 8.88629 10.0333 9.33184C9.85006 9.85283 9.27914 10.1266 8.75815 9.94333C8.23716 9.76006 7.96339 9.18915 8.14666 8.66816C8.46013 7.77705 9.07886 7.02563 9.89327 6.547C10.7077 6.06837 11.6652 5.89341 12.5962 6.05311C13.5273 6.2128 14.3717 6.69686 14.9801 7.41953C15.5883 8.14205 15.9213 9.05648 15.92 10.0009C15.9195 11.5313 14.7849 12.5419 13.9747 13.082C13.5391 13.3725 13.1105 13.586 12.7949 13.7263C12.6356 13.7971 12.5015 13.8508 12.4049 13.8876C12.3565 13.906 12.3173 13.9203 12.2887 13.9305L12.254 13.9427L12.2429 13.9464L12.239 13.9478L12.2375 13.9483C12.2372 13.9484 12.2362 13.9487 11.92 13L12.2362 13.9487C11.7123 14.1233 11.146 13.8402 10.9713 13.3162C10.7968 12.7926 11.0794 12.2267 11.6027 12.0517L11.6014 12.0521C11.6015 12.0521 11.6016 12.052 11.6027 12.0517L11.6187 12.0461C11.6341 12.0406 11.6593 12.0314 11.6929 12.0186C11.7603 11.9929 11.8606 11.9529 11.9826 11.8987C12.2294 11.789 12.5509 11.6275 12.8653 11.4179C13.5549 10.9582 13.92 10.4691 13.92 10L13.92 9.99851C13.9207 9.52619 13.7542 9.06886 13.45 8.70753C13.1459 8.34619 12.7236 8.10417 12.2581 8.02432Z"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 15C12.5523 15 13 15.4477 13 16V16.5C13 17.0523 12.5523 17.5 12 17.5C11.4477 17.5 11 17.0523 11 16.5V16C11 15.4477 11.4477 15 12 15Z"/>
+                                                    </svg>
+                                            </div>
+                                            <div class="tooltip__bubble">Helper Text</div>
+                                        </div>
+                                    </div>
+                                    <div class="card__footer">
+                                        <h4 class="card__title">Tooltip</h4>
+                                        <p>Container</p>
+                                    </div>
+                                </a>
+                                <a href="./pages/calendar.html" class="card preview__card">
+                                    <div class="card__content">
+                                        <div class="calendar calendar_mini">
+                                            <div class="calendar__title">October 2019</div>
+                                            <div class="calendar__wrapper">
+                                                <div class="calendar__inner">
+                                                    <span class="calendar__item calendar__item_day">Mon</span>
+                                                    <span class="calendar__item calendar__item_day">Tue</span>
+                                                    <span class="calendar__item calendar__item_day">Wed</span>
+                                                    <span class="calendar__item calendar__item_day">Thu</span>
+                                                    <span class="calendar__item calendar__item_day">Fri</span>
+                                                    <span class="calendar__item calendar__item_day">Sat</span>
+                                                    <span class="calendar__item calendar__item_day">Sun</span>
+                                                    <span class="calendar__item"></span>
+                                                    <span class="calendar__item"></span>
+                                                    <span class="calendar__item">1</span>
+                                                    <span class="calendar__item">2</span>
+                                                    <span class="calendar__item">3</span>
+                                                    <span class="calendar__item">4</span>
+                                                    <span class="calendar__item">5</span>
+                                                    <span class="calendar__item">6</span>
+                                                    <span class="calendar__item">7</span>
+                                                    <span class="calendar__item">8</span>
+                                                    <span class="calendar__item">9</span>
+                                                    <span class="calendar__item">10</span>
+                                                    <span class="calendar__item">11</span>
+                                                    <span class="calendar__item">12</span>
+                                                    <span class="calendar__item calendar__item_area">13</span>
+                                                    <span class="calendar__item calendar__item_area-day">14</span>
+                                                    <span class="calendar__item calendar__item_area-day">15</span>
+                                                    <span class="calendar__item calendar__item_area-day">16</span>
+                                                    <span class="calendar__item calendar__item_area-day">17</span>
+                                                    <span class="calendar__item calendar__item_area">18</span>
+                                                    <span class="calendar__item">19</span>
+                                                    <span class="calendar__item">20</span>
+                                                    <span class="calendar__item">21</span>
+                                                    <span class="calendar__item">22</span>
+                                                    <span class="calendar__item">23</span>
+                                                    <span class="calendar__item">24</span>
+                                                    <span class="calendar__item">25</span>
+                                                    <span class="calendar__item">26</span>
+                                                    <span class="calendar__item">27</span>
+                                                    <span class="calendar__item">28</span>
+                                                    <span class="calendar__item">29</span>
+                                                    <span class="calendar__item">30</span>
+                                                    <span class="calendar__item">31</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__footer">
+                                        <h4 class="card__title">Calendar</h4>
+                                        <p>Container</p>
+                                    </div>
+                                </a>
+                                <a href="./pages/modal.html" class="card preview__card">
+                                    <div class="card__content">
+                                            <div class="modal__window card__modal">
+                                                <div class="modal__mark"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4714 3.52861C12.7318 3.78896 12.7318 4.21107 12.4714 4.47141L4.47141 12.4714C4.21107 12.7318 3.78896 12.7318 3.52861 12.4714C3.26826 12.2111 3.26826 11.789 3.52861 11.5286L11.5286 3.52861C11.789 3.26826 12.2111 3.26826 12.4714 3.52861Z" fill="#495057"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.52861 3.52861C3.78896 3.26826 4.21107 3.26826 4.47141 3.52861L12.4714 11.5286C12.7318 11.789 12.7318 12.2111 12.4714 12.4714C12.2111 12.7318 11.789 12.7318 11.5286 12.4714L3.52861 4.47141C3.26826 4.21107 3.26826 3.78896 3.52861 3.52861Z" fill="#495057"/></svg>
+                                                    </svg>
+                                                </div>
+                                                <div class="modal__title">Modal title</div>
+                                                <div class="modal__content">
+                                                    <div class="text-group">
+                                                        <label class="text-group__label">Email</label>
+                                                        <div class="text-group__input">
+                                                            <input  type="email" placeholder="Email">
+                                                        </div>
+                                                    </div>
+                                                    <button class="button button_primary button_modal">Submit</button>
+                                                    </div>
+                                            </div>
+            
+                                    </div>
+                                    <div class="card__footer">
+                                        <h4 class="card__title">Modal dialog</h4>
+                                        <p>Container</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="tabs__content tabs__content_templates">
+                            <div class="main-page__container preview__templates">
+                                <h3 class="preview__text">Skeleton</h3>
+                                <div class="skeleton">
+                                    <div class="skeleton__header">
+                                        <div class="skeleton__avatar"></div>
+                                        <div class="skeleton__group">
+                                            <div class="skeleton__text" style="width:35%"></div>
+                                            <div class="skeleton__text" style="width:60%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skelton__content">
+                                        <div class="skeleton__text" style="width:100%"></div>
+                                        <div class="skeleton__text" style="width:100%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-page__container preview__templates">
+                                <h3 class="preview__text">Accordion</h3>
+                                <div class="accordion">
+                                    <details class="accordion__item" open>
+                                        <summary class="accordion__summary">
+                                            Accordion item 1
+                                            <svg
+                                                width="18"
+                                                height="10"
+                                                viewBox="0 0 18 10"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                class="accordion__icon"
+                                            >
+                                                <path
+                                                    d="M1 1L9 9L17 1"
+                                                    stroke="#495057"
+                                                    stroke-width="2"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                        </summary>
+                                        <p>
+                                            Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                                            do amet sint. Velit officia consequat duis enim velit
+                                            mollit. Exercitation veniam consequat sunt nostrud amet.
+                                        </p>
+                                    </details>
+                                    <details class="accordion__item">
+                                        <summary class="accordion__summary">
+                                            Accordion item 2
+                                            <svg
+                                                width="18"
+                                                height="10"
+                                                viewBox="0 0 18 10"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                class="accordion__icon"
+                                            >
+                                                <path
+                                                    d="M1 1L9 9L17 1"
+                                                    stroke="#495057"
+                                                    stroke-width="2"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                        </summary>
+                                        <p>
+                                            Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                                            do amet sint. Velit officia consequat duis enim velit
+                                            mollit. Exercitation veniam consequat sunt nostrud amet.
+                                        </p>
+                                    </details>
+                                    <details class="accordion__item">
+                                        <summary class="accordion__summary">
+                                            Accordion item 3
+                                            <svg
+                                                width="18"
+                                                height="10"
+                                                viewBox="0 0 18 10"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                class="accordion__icon"
+                                            >
+                                                <path
+                                                    d="M1 1L9 9L17 1"
+                                                    stroke="#495057"
+                                                    stroke-width="2"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                        </summary>
+                                        <p>
+                                            Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                                            do amet sint. Velit officia consequat duis enim velit
+                                            mollit. Exercitation veniam consequat sunt nostrud amet.
+                                        </p>
+                                    </details>
+                                </div>
+                            </div>
+                            <div class="main-page__container preview__templates">
+                                <h3 class="preview__text">Buttons</h3>
+                                <div class="preview__buttons">
+                                    <button class="button_primary">Primary</button>
+                                    <button class="button_two">Primary</button>
+                                    <button class="button_secondary">Secondary</button>
+                                    <button class="button_three"><span>Secondary</span> </button>
+                                    <button class="button_alternate">Alternate</button>
+                                    <button class="button_four">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        Alternate</button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                
+            </main>
+            <footer class="footer">
+                <div class="main-page__container">
+                    <h2 class="footer__title">About</h2>
+                    <p class="footer__content">This project is a collection of professionally designed, pre-built, fully responsive HTML snippets you can drop into your projects. Get started by checking out our free preview components, or browsing the PNG previews in the categories you're most curious about.</p>
+                </div>
+            </footer>
+        </div>
+
+    </body>
+    <script src="/js/theme-changer.js"></script>
+    <script src="./js/burger-changer.js"></script>
+</html>

@@ -1,0 +1,78 @@
+.calendar {
+    box-sizing: border-box;
+    border: 1px solid var(--grey-3);
+    border-radius: 8px;
+    background-color: var(--white);
+    width: 100%;
+    max-width: 300px;
+    padding: 28px 36px;
+
+    &__title{
+        font-family: 'Inter';
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 120%;
+        color: var(--blue-4);
+        text-align: center;
+        padding-bottom: 24px;
+    }
+    
+    &__wrapper {
+        position: relative;
+        padding-bottom: 100%;
+    
+        
+    }
+    &__inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+     
+    }
+    
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 143%;
+        color: var(--blue-4);
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    &__item_day {
+        color: var(--grey-6);
+        font-family: 'Inter',sans-serif;
+    }
+    
+    &__item_area{
+        background-color: var(--blue-2);
+        color: var(--white);
+    }
+    
+    &__item_area-day {
+        background-color: var(--grey-7);
+    
+    }
+
+    &_mini {
+        max-width: 200px;
+        width: 200px;
+        padding: 14px 13px;
+    }
+
+    &_mini &__title{
+        font-size: 14px;
+        padding-bottom: 14px;
+    }
+
+    &_mini &__item{
+        font-size: 10px;
+        
+    }
+}

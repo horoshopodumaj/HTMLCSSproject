@@ -1,0 +1,54 @@
+.preview {
+    background-color: var(--grey-5);
+    flex: 1;
+    padding-bottom: 70px;
+
+    @media screen and (max-width: 425px) {
+        padding-bottom: 24px;
+    }
+
+    &__box {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 25px;
+        justify-content: center;
+    }
+
+    &__content {
+        padding-top: 50px;
+
+        @media screen and (max-width: 425px) {
+            padding-top: 24px;
+        }
+    }
+
+    &__card {
+        flex-basis: 350px;
+    }
+
+    &__templates {
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        text-transform: uppercase;
+        color: var(--grey-3);
+        font-weight: 400;
+        font-size: 28px;
+    }
+
+    &__buttons {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(2, auto);
+        grid-auto-flow: column;
+        grid-gap: 30px;
+
+        @media screen and (max-width: 425px) {
+            grid-template-columns: repeat(1, auto);
+            grid-template-rows: repeat(1, auto);
+            grid-auto-flow: row;
+            grid-gap: 20px;
+        }
+    }
+}

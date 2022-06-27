@@ -1,0 +1,71 @@
+.skeleton {
+    @media screen and (max-width: 425px) {
+        max-width: 100%;
+    }
+
+    box-sizing: border-box;
+    max-width: 50%;
+    height: 192px;
+    background: var(--white);
+    border: 1px solid var(--grey-3);
+    border-radius: 8px;
+    padding: 24px 40px 32px 24px;
+    display: flex;
+    flex-direction: column;
+
+    &__header {
+        display: flex;
+    }
+
+    &__avatar {
+        height: 64px;
+        width: 64px;
+        border-radius: 50%;
+        background-color: var(--grey-2);
+        margin-bottom: 24px;
+        margin-right: 16px;
+    }
+
+    &__group {
+        display: flex;
+        flex-direction: column;
+        padding-top: 8px;
+        flex: 1 0 auto;
+    }
+
+    &__text {
+        height: 20px;
+        margin-bottom: 8px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__avatar,
+    &__text {
+        animation-duration: 1.5s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        animation-name: backgroundMovement;
+        animation-timing-function: linear;
+        background: linear-gradient(
+            267.58deg,
+            var(--grey-2) 0%,
+            var(--grey-1) 80%,
+            var(--grey-2) 100%
+        );
+        background-size: 200%;
+    }
+}
+
+@keyframes backgroundMovement {
+    0% {
+        background-position: 100%;
+    }
+
+    100% {
+        background-position: -100%;
+    }
+}

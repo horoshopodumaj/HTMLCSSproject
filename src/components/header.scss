@@ -1,0 +1,42 @@
+.header {
+    background-color: var(--white);
+    overflow: hidden;
+
+    &__logo {
+        margin-top: 25px;
+        display: block;
+
+        svg {
+            fill: var(--black);
+        }
+
+        @media screen and (max-width: 425px) {
+            margin-top: 16px;
+            text-align: center;
+        }
+    }
+
+    &__title {
+        font-family: 'Inter', sans-serif;
+        padding: 40px 0px;
+        margin: 0;
+        font-weight: 500;
+        font-size: 50px;
+        line-height: 128%;
+        color: var(--black);
+
+        @media screen and (max-width: 425px) {
+            font-family: 'Inter', sans-serif;
+            padding: 30px 0;
+            margin: 0;
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 136%;
+            color: var(--grey-4);
+        }
+    }
+
+    &__dark-mode .toggle__control {
+        margin-left: 12px;
+    }
+}

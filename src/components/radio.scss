@@ -1,0 +1,71 @@
+.radio {
+    display: block;
+    cursor: pointer;
+
+    &__input{
+        width: 0;
+        height: 0;
+        opacity: 0;
+        clip: rect(0, 0, 0, 0);
+        outline: none;
+        position: absolute;
+    }
+    
+    &__state {
+        display: flex;
+        align-items: center;
+    }
+    &__control {
+        height: 28px;
+        width: 28px;
+        border-radius: 50%;
+        background-color: var(--white);
+        border: 1px solid var(--grey-2);
+        box-sizing: border-box;
+        margin-right: 12px;
+        position: relative;
+    }
+    &__icon {
+        height: 18px;
+        width: 18px;
+        border-radius: 50%;
+        background-color: var(--blue-2);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+    }
+    &__label {
+        font-family: 'Inter',sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: var(--grey-4);
+    }
+
+    &__input:checked ~ &__state &__control {
+        border: 2px solid var(--blue-2);
+    }
+    
+    &__input:checked ~ &__state &__icon {
+        display: block;
+    }
+    
+    &__input:focus ~ &__state &__label {
+        text-decoration: underline;
+    }
+    
+    &__input:disabled ~ &__state &__icon {
+        display: none;
+    }
+    
+    &__input:disabled ~ &__state {
+        opacity: .5;
+        cursor: not-allowed;
+    }
+    
+    &__input:disabled ~ &__state &__control {
+        background-color: var(--grey-2);
+    }
+}

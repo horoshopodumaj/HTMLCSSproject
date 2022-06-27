@@ -1,0 +1,18 @@
+.dark-mode {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    @media screen and (max-width: 425px) {
+        display: none;
+    }
+
+    @media screen and (max-width: 1024px) and (min-width: 768px) {
+        margin-right: 16px;
+    }
+
+    &__icon svg {
+        stroke: var(--grey-3);
+    }
+}

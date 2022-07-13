@@ -1081,7 +1081,7 @@ a.card {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
   .footer__content {
     margin-bottom: 32px;
     text-align: center;
@@ -1397,7 +1397,7 @@ figure {
     margin-top: 20px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 425px) {
   .burger-menu {
     display: none;
   }
@@ -1431,7 +1431,7 @@ figure {
     display: none;
   }
 }
-@media screen and (max-width: 1024px) and (min-width: 768px) {
+@media screen and (max-width: 1024px) and (min-width: 426px) {
   .dark-mode {
     margin-right: 16px;
   }
